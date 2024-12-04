@@ -41,7 +41,7 @@ criterion = nn.MSELoss()
 optimizer = Adam(model.parameters(), lr=0.001)
 
 train_losses, val_losses, val_r2_scores = train.train_model(
-    model, criterion, optimizer, x_train, y_train, x_test, y_test, 128, 500, 30
+    model, criterion, optimizer, x_train, y_train, x_test, y_test, 128, 100, 30
 )
 
 # 최종 결과 출력
